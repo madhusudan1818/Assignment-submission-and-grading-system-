@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student | Assignment Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Hello, <span id="who"></span></h1><button onclick="logout()">Log out</button></header>
+  <main>
+    <div class="card">
+      <h2>Submit an assignment</h2>
+      <label for="title">Title</label><input id="title">
+      <label for="desc">Description</label><textarea id="desc" rows="3"></textarea>
+      <label for="link">File link (Google Drive, GitHub, etc.)</label><input id="link" placeholder="https://">
+      <div class="msg" id="msg"></div>
+      <button id="send">Submit assignment</button>
+    </div>
+    <div class="card"><h2>My submissions and grades</h2><div id="list"></div></div>
+  </main>
+  <script src="app.js"></script>
+  <script>initStudent();</script>
+</body>
+</html>
